@@ -1,0 +1,18 @@
+[
+	{ 
+		"questions": 
+		[
+			"Which company do you think is the greates?", 
+		 	"Which social media do you think is the greates?", 
+		 	"Who is the best CEO?",
+		 	"What is the best country to live in?"
+		],
+		"answears": 
+		[ 
+			["Rival Organisation","Legit Company","Evil Corporation","Opponent Business"],
+			["Facebook","LinkedIn","Twitter"],
+			["Elon Musk","Bill Gates","Mark Zuckerberg"], 
+			["Norway","Poland","USA","Canada","Denmark"] 
+		]
+	}
+]

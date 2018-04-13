@@ -1,0 +1,142 @@
+
+// variables 
+
+$fontSize: 16px;
+$blueColor: #7991ff;
+
+// Mixins
+
+@mixin blockCenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@mixin btnHover {
+	background-color: #7991ff;
+	color: #fff;
+}
+
+@font-face {
+	font-family: "somatic";
+	src: url("../fonts/Somatic-Rounded.otf");
+}
+
+body {
+	font-family: "somatic";
+	font-size: $fontSize;	
+}
+
+.question, p {
+	text-align: center;
+	-webkit-animation: fadeInDown .9s .2s ease both;
+}
+
+.container {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+header svg{ 
+	display: block;
+	@include blockCenter;
+	margin-bottom: 30px;
+	-webkit-animation: fadeInDown .9s .2s ease both;
+}
+
+.answear {
+	@include blockCenter;
+	border-radius: 10px;
+	width: 300px;
+	background-color: #ebebeb;
+	color: #7c7c7c;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	-webkit-animation: flipInY .9s .2s ease both;
+}
+
+.answearContainer {
+	display: none;
+}
+
+.buttons {
+	@include blockCenter;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+.next, .back {
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background-color: #fff;
+	color: #7c7c7c;
+}
+
+.next {
+	float: right;
+	-webkit-animation: fadeInRight .9s .4s ease both;
+	&:hover {
+		@include btnHover;		
+	}
+}
+
+.back {
+	float: left;
+	-webkit-animation: fadeInLeft .9s .4s ease both;
+	&:hover {
+		@include btnHover;		
+	}
+}
+
+.next:disabled, .next[disabled], .back:disabled, .back[disabled] {
+	opacity: 0.3;
+}
+
+.next:disabled:hover, .next[disabled]:hover, .back:disabled:hover, .back[disabled]:hover {
+  background-color: #fff;
+  color: #7c7c7c;	
+}
+
+progress {
+	-webkit-animation: fadeIn .9s .4s ease both;
+	@include blockCenter;
+	margin-top: 60px;
+	display: block;
+	width: 300px;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: $blueColor;
+}
+
+footer {
+	margin-top: 20px;
+	font-size: 12px;
+	-webkit-animation: fadeInUp .9s .2s ease both;
+}
+
+.yourAnswear {
+	background-color: $blueColor;
+	color: #fff;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}

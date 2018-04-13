@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "somatic";
+  src: url("../fonts/Somatic-Rounded.otf"); }
+
+body {
+  font-family: "somatic";
+  font-size: 16px; }
+
+.question, p {
+  text-align: center;
+  -webkit-animation: fadeInDown .9s .2s ease both; }
+
+.container {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px; }
+
+.inner {
+  display: table-cell;
+  vertical-align: middle; }
+
+header svg {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  -webkit-animation: fadeInDown .9s .2s ease both; }
+
+.answear {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #ebebeb;
+  color: #7c7c7c;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+  -webkit-animation: flipInY .9s .2s ease both; }
+
+.answearContainer {
+  display: none; }
+
+.buttons {
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  margin-bottom: 10px; }
+
+.next, .back {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  color: #7c7c7c; }
+
+.next {
+  float: right;
+  -webkit-animation: fadeInRight .9s .4s ease both; }
+  .next:hover {
+    background-color: #7991ff;
+    color: #fff; }
+
+.back {
+  float: left;
+  -webkit-animation: fadeInLeft .9s .4s ease both; }
+  .back:hover {
+    background-color: #7991ff;
+    color: #fff; }
+
+.next:disabled, .next[disabled], .back:disabled, .back[disabled] {
+  opacity: 0.3;
+  color: #f2f2f2; }
+
+.next:disabled:hover, .next[disabled]:hover, .back:disabled:hover, .back[disabled]:hover {
+  background-color: #fff;
+  color: #f2f2f2; }
+
+progress {
+  -webkit-animation: fadeIn .9s .4s ease both;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  display: block;
+  width: 300px; }
+
+progress[value]::-webkit-progress-bar {
+  background-color: #7991ff; }
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  -webkit-animation: fadeInUp .9s .2s ease both; }
+
+.yourAnswear {
+  background-color: #7991ff;
+  color: #fff; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
